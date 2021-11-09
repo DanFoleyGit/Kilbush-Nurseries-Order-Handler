@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A4A89090"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Screen"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <View
+        android:id="@+id/tescoContainer"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:background="#590377AC"
+        app:layout_constraintBottom_toTopOf="@+id/lidlContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_tescoOrders"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="40dp"
+        android:drawableEnd="@android:drawable/ic_menu_edit"
+        android:text="Input Tesco Order"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_tescoCalculator"
+        app:layout_constraintEnd_toEndOf="@+id/tescoContainer"
+        app:layout_constraintStart_toStartOf="@+id/tescoContainer" />
+
+
+    <Button
+        android:id="@+id/btn_ViewTescoOrders"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:drawableEnd="@android:drawable/ic_menu_today"
+        android:text="View Tesco Orders"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tescoContainer"
+        app:layout_constraintEnd_toEndOf="@+id/tescoContainer"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/tescoContainer" />
+
+    <Button
+        android:id="@+id/btn_tescoCalculator"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:drawableEnd="@android:drawable/ic_menu_add"
+        android:text="Tesco Calculator"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ViewTescoOrders"
+        app:layout_constraintEnd_toEndOf="@+id/tescoContainer"
+        app:layout_constraintStart_toStartOf="@+id/tescoContainer" />
+
+    <View
+        android:id="@+id/lidlContainer"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:background="#C3FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_lidlOrders"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:drawableEnd="@android:drawable/ic_menu_edit"
+        android:text="Input Lidl Order"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_lidlCalculator"
+        app:layout_constraintEnd_toEndOf="@+id/lidlContainer"
+        app:layout_constraintStart_toStartOf="@+id/lidlContainer" />
+
+    <Button
+        android:id="@+id/btn_ViewLidlOrders"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:drawableEnd="@android:drawable/ic_menu_today"
+        android:text="View Lidl Orders"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lidlContainer"
+        app:layout_constraintEnd_toEndOf="@+id/lidlContainer"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/lidlContainer"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.978" />
+
+    <Button
+        android:id="@+id/btn_lidlCalculator"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:drawableEnd="@android:drawable/ic_menu_add"
+        android:text="Lidl Calculator"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_ViewLidlOrders"
+        app:layout_constraintEnd_toEndOf="@+id/lidlContainer"
+        app:layout_constraintStart_toStartOf="@+id/lidlContainer" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

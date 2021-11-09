@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewTescoOrdersActivity">
+
+
+    <TextView
+        android:id="@+id/tescoViewOrdersHeader"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#590377AC"
+        android:text="View Tesco Orders"
+        android:textAlignment="center"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <CalendarView
+        android:id="@+id/tescoCalendarView"
+        android:layout_width="385dp"
+        android:layout_height="366dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tescoViewOrdersHeader"
+        app:layout_constraintVertical_bias="0.108" />
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="110dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="4dp"
+        android:divider="@android:color/black"
+        android:dividerHeight="1dp"
+        app:layout_constraintStart_toEndOf="@+id/tescoTableNames"
+        app:layout_constraintTop_toBottomOf="@+id/tescoCalendarView">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/tescoTableNames"
+        android:layout_width="180dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginBottom="136dp"
+        android:text="Six Pack x30:\nSix Pack x10:\nSunstream:\nEveryday:\n"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tescoCalendarView"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
