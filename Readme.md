@@ -8,4 +8,3 @@ Description: This app is to help staff at a local farm where I work summers to t
 
 The business has two main costumers that have orders every day, Tesco and Lidl. For each customer there is an option to input and view orders and use a relevant calculator. Each customer uses the same 3 activities but with modifications to accommodate the products that they use.
 
-Video Demo: https://youtu.be/zoOe3eOM4Xc 
